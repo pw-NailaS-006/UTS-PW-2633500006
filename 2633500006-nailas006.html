@@ -1,3 +1,4 @@
+HEAD
 
 <!DOCTYPE html>
 <html lang="id">
@@ -173,3 +174,179 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Saya</title>
+
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>My Company</h2>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#kontak">Kontak</a>
+            <a href="#bukutamu">Buku Tamu</a>
+        </nav>
+    </header>
+
+    <!-- BERANDA -->
+    <section class="home" id="home">
+        <h1>Selamat Datang di Tugas Saya</h1>
+        <p>Membangun masa depan dengan penuh semangat.</p>
+        <a href="#about" class="tombol">Selengkapnya</a>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section id="about">
+        <h2 class="judul">Tentang Kami</h2>
+
+        <div class="about">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2"
+                 alt="Foto kantor">
+
+            <div>
+                <h3>Profil MyCompany</h3>
+                <p>
+                    MyCompany merupakan perusahaan yang bergerak
+                    dalam bidang pelayanan dan teknologi.
+                    Kami berkomitmen memberikan pelayanan terbaik,
+                    profesional, dan berkualitas kepada pelanggan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYANAN -->
+    <section id="layanan" class="abu">
+        <h2 class="judul">Layanan Kami</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Melayani pembuatan website profesional.</p>
+            </div>
+
+            <div class="card">
+                <h3>Desain Grafis</h3>
+                <p>Menyediakan desain kreatif dan menarik.</p>
+            </div>
+
+            <div class="card">
+                <h3>Digital Marketing</h3>
+                <p>Membantu pemasaran bisnis secara digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri">
+        <h2 class="judul">Galeri Kami</h2>
+
+        <div class="galeri">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="Foto 1">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c" alt="Foto 2">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt="Foto 3">
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="abu">
+        <h2 class="judul">Kontak Kami</h2>
+
+        <div class="container-kontak">
+            <div>
+                <h3>Informasi Kontak</h3>
+                <p>Alamat: Simpang Katis, Bangka Tengah</p>
+                <p>Email: applepie@gmail</p>
+                <p>Telepon: 087867859153</p>
+            </div>
+
+            <div>
+                <h3>Kirim Pesan</h3>
+
+                <form action="" method="get">
+                    <input type="text" name="nama123"
+                           placeholder="Nama Lengkap" required>
+
+                    <input type="email" name="email123"
+                           placeholder="Email" required>
+
+                    <textarea name="pesan123"
+                              placeholder="Pesan"
+                              required></textarea>
+
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- BUKU TAMU -->
+    <section id="bukutamu">
+        <h2 class="judul">Buku Tamu</h2>
+
+        <div class="form-buku">
+            <form action="" method="get">
+
+                <label>Nama Lengkap *</label>
+                <input type="text" name="nm_lengkap006" required>
+
+                <label>Email *</label>
+                <input type="email" name="applepie@gmail.com" required>
+
+                <label>Asal / Instansi</label>
+                <input type="text" name="asal_instansi123">
+
+                <label>Subjek</label>
+                <input type="text" name="subjek123">
+
+                <label>Pesan / Komentar *</label>
+                <textarea name="naila006" required></textarea>
+
+                <label>Tanggal Kunjungan</label>
+                <input type="date" name="tanggal_kunjungan123"
+                       id="tanggal" readonly>
+
+                <button type="submit">Kirim Buku Tamu</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>MyCompany</h3>
+        <p>© 2026 MyCompany. All Rights Reserved.</p>
+
+        <div class="sosial">
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://youtube.com">YouTube</a>
+        </div>
+    </footer>
+
+    <!-- TANGGAL OTOMATIS -->
+    <script>
+        let sekarang = new Date();
+
+        let tanggal =
+            sekarang.getFullYear() + "-" +
+            String(sekarang.getMonth() + 1).padStart(2, "0") + "-" +
+            String(sekarang.getDate()).padStart(2, "0");
+
+        document.getElementById("tanggal").value = tanggal;
+    </script>
+
+</body>
+</html>
+ 9386e3ad3a664565b717a4581826ddae34c2d1db
